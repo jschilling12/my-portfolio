@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Pivot to Minimal Theme & Architecture Planning"
+date: 2025-12-20
+category: portfolio-dev
+---
+
+# Devlog — 2025-12-20
+
+It was a late night working on the portfolio. I realized my original design wasn’t hooking in correctly because the repository I was using (from MIT) is currently under construction, making it impossible to continue with that specific Jekyll template.
+
+## The Pivot to Minimal
+I decided to fork the **Minimal** theme repository instead. This version offers more customization and gave me a chance to really learn how the underlying components are hooked together. After diving into the documentation and doing some manual exploration, I've found a good rhythm and flow with the new setup.
+
+## Technical Considerations
+* **Ansible:** While the current GitHub Pages setup might not strictly require Ansible, I'm still looking for a meaningful use case to keep it in the stack.
+* **Hosting:** The site is currently hosted via **GitHub Pages** using **GitHub Actions** for deployment.
+* **Architectural Goals:** I am still interested in following my original UML design for the broader ecosystem.
+
+## Project Roadmap & UML
+The goal is to connect these pieces into a cohesive pipeline:
+
+1.  **Main Portfolio:** `jordanschilling.me`
+2.  **Deployment Pipe:** Ansible → CI/CD → AWS
+3.  **Blogging Integration:** A Blogging Platform API connecting back to the GitHub portfolio at `jordanschilling.blog`.
