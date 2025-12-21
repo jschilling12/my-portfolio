@@ -4,5 +4,3 @@ description: Minimal is a theme for GitHub Pages.
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
-url: "https://jschilling12.github.io"
-baseurl: "/my-portfolio"
