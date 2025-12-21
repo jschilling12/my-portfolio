@@ -1,0 +1,24 @@
+---
+layout: post
+title: "CI/CD Troubleshooting & Portfolio Vision"
+date: 2025-12-08
+category: portfolio-dev
+---
+
+# Devlog — 2025-12-08
+
+I've solidified the vision for my digital presence: keeping a "to-the-point" main portfolio separate from a dedicated devlog "blog." While they will be connected, they serve distinct purposes.
+
+## CI/CD and GitHub Actions
+Coming back to the project, the primary hurdle was fixing the deployment pipeline. I initially struggled with the GitHub Action build failing. 
+
+### The Fix: Ruby Versioning
+After researching and consulting documentation:
+* I initially looked into `Gemfile.lock` based on community suggestions regarding "bucket versions."
+* I eventually identified that the **Ruby version** defined in the GitHub Actions `.yml` file was the culprit.
+* Adjusting the version in the workflow file allowed the site to build successfully and reflect changes.
+
+## Architecture Roadmap
+My goal is to build a robust pipeline that connects my various platforms:
+* **Primary Portfolio:** `jordanschilling.me` hosted on AWS, managed via Ansible and CI/CD.
+* **Blogging ecosystem:** A dedicated API connecting the main site to the GitHub-hosted devlog at `jordanschilling.blog`.
