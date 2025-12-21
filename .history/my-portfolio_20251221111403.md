@@ -4,11 +4,11 @@ layout: default
 
 # Project Updates
 
-{% for post in site.categories.focus-buddy %}
+<!-- {% for post in site.categories.focus-buddy %}
 * {{ post.date | date: "%b %d, %Y" }} - [{{ post.title }}]({{ post.url }})
-{% endfor %}
+{% endfor %} -->
 
 _yay_
 
 [back](./)
-[text](focus-buddy.md)
+[text](my-portfolio.md)
