@@ -1,0 +1,77 @@
+---
+layout: post
+title: "Windows Process Tracking & Logic"
+author: "Jordan Schilling"
+date: 2025-12-06
+category: focus-buddy
+---
+
+# Project Update: Adding README Documentation and Defining Next Steps
+
+## Overview
+
+Added a comprehensive **README file** to the project to document setup, usage, and overall architecture.
+
+This repository is **public**, and anyone interested can download the project and follow the README instructions to try it out themselves. The documentation is intended to lower the barrier to entry and clearly explain how the application works, how data is stored, and how to run it locally or as a packaged executable.
+
+The application is currently being used **daily** and is already providing valuable insights into how time is being allocated across tasks and applications.
+
+## Documentation Update
+
+* Added a README covering setup and usage
+* Documented configuration and save-path behavior
+* Clarified how background tracking and the GUI interact
+* Provided enough detail for external users to run the project independently
+
+This marks the transition from a personal experiment to a **shareable and reproducible project**.
+
+## Current State
+
+At this stage, the application:
+
+* Runs continuously via a scheduler
+* Tracks application usage in the background
+* Integrates with a Pomodoro timer GUI
+* Saves CSV time-tracking data automatically
+* Provides actionable feedback on daily focus patterns
+
+The system is stable and already delivering real value in day-to-day use.
+
+## Next Steps
+
+Planned improvements before considering the project “complete”:
+
+* **AI-generated focus reports**
+
+  * Use N8N automation to analyze CSV data
+  * Summarize where focus time is being spent
+  * Generate daily or weekly insight reports
+
+* **Chrome Extension Integration**
+
+  * Track individual browser tabs
+  * Improve granularity for web-based work
+  * Attribute focus time more accurately
+
+* **Mouse Inactivity Timeout**
+
+  * Detect lack of mouse movement
+  * Automatically pause task timers during inactivity
+  * Reduce false positives in focus tracking
+
+* **Window Blocking During Pomodoro Sessions**
+
+  * Prevent distractions during focus intervals
+  * Enforce Pomodoro discipline at the OS level
+
+* **Improved Task Naming Conventions**
+
+  * Normalize application and task labels
+  * Improve clarity in reports and CSV exports
+  * Reduce noise in long-term analytics
+
+## Project Status
+
+Once the above items are implemented, the project will be considered **feature-complete**.
+
+Until then, the application is actively used and already providing strong feedback on time allocation and focus habits. The current results have validated the original idea and justified continued development.
