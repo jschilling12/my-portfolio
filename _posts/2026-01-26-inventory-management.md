@@ -1,0 +1,91 @@
+---
+layout: post
+title: "Static Site Server Integration and Inventory System Redeployment"
+author: "Jordan Schilling"
+date: 2026-01-26
+category: inventory-management
+---
+
+# Devlog — 2026-01-26
+
+## Overview
+
+Returned to a project originally developed for a class: an **Inventory Management web application**. After completing the course, I expanded the project by integrating it into a **Static Site Server**, allowing the application to be accessed at any time, added to my portfolio, and used as a learning platform for **Flask web applications and backend architecture design**.
+
+This iteration shifts the project from an academic deliverable into a long-term, evolving system focused on real-world deployment and infrastructure concepts.
+
+---
+
+## README Audit & Relaunch
+
+The first step in revisiting this project was performing a full **README audit** to ensure that all setup and deployment steps were still accurate and reproducible.
+
+During this process:
+
+* Several outdated or unclear steps were identified
+* Documentation issues were corrected
+* The revised README was successfully followed **from scratch** to deploy a fresh instance of the static site server
+
+This validated both the documentation and the deployment process, confirming that the project can be reliably relaunched.
+
+---
+
+## Motivation
+
+The primary motivation for restarting this project was to gain deeper exposure to:
+
+* **Server-side deployment**
+* **Web application architecture**
+* **Microservice-oriented thinking**
+
+This project provides a practical environment to explore all three while continuing to build on an existing codebase.
+
+---
+
+## Technical Details
+
+### Current Focus
+
+The next phase of development is centered on building out the **connection between UI elements and the backend**.
+
+Key notes:
+
+* The **entire backend was written from scratch**, with no AI assistance
+* This approach will be maintained moving forward to reinforce core backend development skills
+
+The initial UI skeleton was sourced from:
+
+[gavindsouza/inventory-management-system](https://github.com/gavindsouza/inventory-management-system/tree/main/inventory/templates)
+
+This source is credited in the README. From here, I plan to:
+
+* Implement custom **webhooks** connecting frontend to backend
+* Build backend services using **Python and Django**
+* Use **SQLite3** initially for persistence
+* Potentially branch out to other databases (e.g., MongoDB) as the system evolves
+
+---
+
+## Timeline & Deployment
+
+This is a **flexible, schedule-based project**, developed alongside other commitments. That said, the goal is to have a fully functional **Inventory Management System** deployed within the next **two months**.
+
+Once complete, the project will be:
+
+* Deployed publicly on my website
+* Included in my portfolio
+* Used as a concrete demonstration that complex projects can be broken down, executed efficiently, and delivered reliably
+
+---
+
+## References
+
+* DigitalOcean Droplet Metrics
+  [https://cloud.digitalocean.com/droplets/547380802/graphs?i=06b9fc&period=hour](https://cloud.digitalocean.com/droplets/547380802/graphs?i=06b9fc&period=hour)
+
+* Inventory Management UI Templates
+  [https://github.com/gavindsouza/inventory-management-system/tree/main/inventory/templates](https://github.com/gavindsouza/inventory-management-system/tree/main/inventory/templates)
+
+* Gunicorn Worker Process Debugging
+  [https://stackoverflow.com/questions/73413131/gunicorn-server-error-exception-in-worker-process-after-deploying-a-twilio](https://stackoverflow.com/questions/73413131/gunicorn-server-error-exception-in-worker-process-after-deploying-a-twilio)
+

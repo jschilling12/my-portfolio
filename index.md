@@ -39,6 +39,17 @@ Welcome! This space is dedicated to tracking my technical growth and documenting
 
 * * *
 
+## **LOG:** Static Site Server hosting a Inventory Management System
+
+> Static Site Server is a full-stack deployment project that hosts an Inventory Management System on a cloud-based Linux server. It demonstrates practical experience with Flask application hosting, Gunicorn WSGI services, Nginx reverse proxies, and automated deployments, mirroring **real-world production infrastructure**.
+.
+
+* * *
+
+ [Dev-Log-Focus-Buddy](./inventory-management.html).
+
+* * *
+
 
 ---
 
