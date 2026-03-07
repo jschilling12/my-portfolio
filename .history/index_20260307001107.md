@@ -2,24 +2,22 @@
 layout: default
 ---
 
-# About This DevLog
+# Project Milestones
 
-Welcome! This space is dedicated to tracking my technical growth and documenting the process of my current projects.
+### Python & Playwright Automation Framework using OOP or POM (Page Object Model) 
+*in progress...*
+* **Focus**: Build a production-quality automation framework that demonstrates SDET capability AND CI/CD ownership, and DevOps-adjacent engineering practices. Using this on my personal business website for every PR request, to smoketest the customer experience.
 
-## Project Milestones
+### Typescript & Playwright Automation Framework 
+*in progress...*
+* **Focus**: Build a production-quality automation framework that demonstrates SDET capability, using an app I prompt coded called NotetasticOS. Used to test basic functionality for product use.
 
-### Short Term: FocusBuddy / Time-Tracking
-* **Focus**: CLI logic, win32 process querying, and Python time-management modules.
-
-### Medium Term: Net Worth Web App
-* **Focus**: Web frameworks, SQL database management, and Docker containerization.
-
-### Long Term: AI Calendar Manager
-* **Focus**: Advanced DevOps, service discovery, and AI integration.
+### Gaming / PC Quality Playability Harness
+* **Focus**: Develop a system-level quality engineering case study and tooling harness demonstrating reliability diagnostics, environment awareness, and reproducible execution aligned with QA, SRE, and DevOps thinking.
 
 ---
 
-## **LOG:** Porfolio-Dev
+### **LOG:** Porfolio-Dev
 
 > This log tracks the "how" and "why" behind the construction of this portfolio. It is a chronological record of the technical hurdles and architectural pivots involved in creating a professional digital presence.
 
@@ -29,7 +27,7 @@ Welcome! This space is dedicated to tracking my technical growth and documenting
 
 * * *
 
-## **LOG:** Focus Buddy & Time Tracking
+### **LOG:** Focus Buddy & Time Tracking
 
 > FocusBuddy is a terminal-based tool designed to help developers track deep-work sessions and application usage directly from the command line or an optional GUI. This project serves as my primary vehicle for mastering **CLI development** and **system-level process monitoring**.
 
@@ -39,14 +37,13 @@ Welcome! This space is dedicated to tracking my technical growth and documenting
 
 * * *
 
-## **LOG:** Static Site Server hosting a Inventory Management System
+### **LOG:** Porfolio-Dev
 
-> Static Site Server is a full-stack deployment project that hosts an Inventory Management System on a cloud-based Linux server. It demonstrates practical experience with Flask application hosting, Gunicorn WSGI services, Nginx reverse proxies, and automated deployments, mirroring **real-world production infrastructure**.
-.
+> This log tracks the "how" and "why" behind the construction of this portfolio. It is a chronological record of the technical hurdles and architectural pivots involved in creating a professional digital presence.
 
 * * *
 
- [Dev-Log-Inventory-Management](./inventory-management.html).
+ [Dev-Log-Porfolio-Dev](./portfolio-dev.html).
 
 * * *
 
