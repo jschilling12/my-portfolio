@@ -1,102 +1,33 @@
 ---
 layout: post
-title: "Windows Process Tracking & Logic"
+title: "Getting Started with Playwright and Planning the Framework"
 author: "Jordan Schilling"
-date: 2025-12-06
-category: focus-buddy
+date: 2026-03-05
+category: python-playwright
 ---
 
-# Devlog â€” 2025-12-06
+# Devlog — 2026-03-05
 
-I started this session with two main questions: **where will I store the data** and **how can I capture a window?** Once those variables were set, it became a matter of logic.
+## Overview
 
-## Windows Process Query 
-Starting with a simple query on Windows process handling, it turns out processes are directly connected to **win32 wrappers**. This makes capture relatively easy; now itâ€™s just about timing.
+Kicked off a new project — building an **automation framework using Python and Playwright**. Although I have experience with Selenium, Playwright is new to me and I'm excited to learn it.
 
-I utilized these resources to assist with process capture:
-* [Track Windows App Usage (Dev.to)](https://dev.to/tkkhhaarree/track-windows-app-usage-time-using-python-h9h)
-* [Obtain Active Window (Stack Overflow)](https://stackoverflow.com/questions/10266281/obtain-active-window-using-python)
+I also created an **AI Notetaking OS/Calendar** and will be hooking it up to check areas with must-have acceptance criteria and areas with continuous knock-on effects.
 
-## Time Module and Loop
-I moved on to learning about the `time` module to ensure a consistent loop. I'm using a **1-second timer** to capture start and end times. 
+## Initial Exploration
 
-Initially, the documentation was a bit difficult to parse, but it clicked once I figured out how `time.sleep()` manages the loop frequency in conjunction with start and end timestamps.
-* [Python Time Module Documentation](https://docs.python.org/3/library/time.html)
+* Explored Playwright **syntax and best practices**
+* Evaluated whether to keep the test framework **separate from the source repo**
+* Reviewed documentation to understand how Playwright differs from Selenium
 
-```python
+## Object Oriented Programming Focus
 
-process = activeWindow()
-start = time.time()
+I want to focus on **Object Oriented Programming** for this project. To that end, I began thinking about:
 
-time.strptime(string[, format])
+* What **classes** the framework will need
+* How to structure **definitions and methods** across page objects
+* What OOP patterns make sense for a dynamic, test-driven automation framework
 
-    
-while True:
-    time.sleep(1)
+## Next Steps
 
-    new_process = activeWindow()
-
-    if new_process != process:
-        end = time.time()
-        total = end - start
-        time_tracking[process] += total
-        process = activeWindow()
-        start = time.time()
-
-    elif new_process is None:
-        end = time.time()
-        total = end - start
-        time_tracking[process] += total
-        process = activeWindow()
-        start = time.time()
-
-```
-
-## Logic for Process Monitoring
-The logic follows a simple "snapshot" approach: 
-1. Is the current process still matching the "new process" snapshot? 
-2. **Yes:** No intervention needed (system checks every 1 second).
-3. **No:** The timer calculates the duration of the old process, and the new process replaces it as the "current" one.
-
-## Permissions and Access Denial
-I encountered some confusion around permissions and access denial. I found documentation and implemented `try/except` blocks to handle these edge cases. With the guidance of AI (set to study and learn mode), I refactored the code to avoid crashes due to permission errors.
-
-* [Process Security and Access Rights](https://learn.microsoft.com/en-us/windows/win32/procthread/process-security-and-access-rights)
-* [Using Windows Headers](https://learn.microsoft.com/en-us/windows/win32/winprog/using-the-windows-headers)
-* [SeDebugPrivilege Background](https://jongampark.wordpress.com/2008/09/30/opening-a-process-with-se_debug_name-privilege/)
-
-## SQL Database and Future Plans
-I finished the session by building a skeleton for a **SQL database** to store the time-tracking data, utilizing some of my previous code. I'm planning to tackle the "Focus Buddy" features last, as the time-tracking algorithm was the more complex hurdle to clear first.
-
-```python
-from pydoc import resolve
-import sqlite3
-import os
-from pathlib import Path
-from typing import Optional
-
-def connect_db(db_path: Optional[str] = None):
-
-    if db_path is None:
-        db_path = os.environ.get(
-        "DATABASE_NAME",
-            str((Path(__file__).parent.parent / "time_tracking.db").resolve()),
-        )
-    return sqlite3.connect(db_path)
-
-def init_db():
-    with connect_db()as conn:
-        cursor = conn.cursor()
-        
-        #Time Tracking Table
-        cursor.execute('''
-                       CREATE TABLE IF NOT EXISTS time_tracking (
-                       id INTEGER PRIMARY KEY,
-                       app_name TEXT,
-                       date INTEGER, 
-                       time_tracked INTEGER DEFAULT 0,
-                       UNIQUE(app_name, date)
-                       )
-                       ''')
-        
-```
+Now that I have a strong grasp on the tooling and a clear vision for the architecture, the next step is to **flesh out all the test scripts** and begin building the class hierarchy.
