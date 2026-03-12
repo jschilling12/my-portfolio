@@ -73,7 +73,7 @@ Key projects include:
 * **FocusBuddy CLI** — A terminal-based deep-work tracker and process monitor built to master CLI development and system-level engineering.
 * **Portfolio Site** — This very site, built using Jekyll, GitHub Pages, and custom theme modifications.
 
-[View all projects →](./)
+[View all projects →](./jordan-schilling-projects)
 
 ---
 
@@ -91,4 +91,4 @@ The goal is clear: become a complete engineer who can design, build, test, deplo
 
 ---
 
-[Back to homepage →](./) | [View projects →](./)
+[Back to homepage →](./) | [View projects →](./jordan-schilling-projects)
