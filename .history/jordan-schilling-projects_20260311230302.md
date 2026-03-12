@@ -63,13 +63,14 @@ This portfolio site itself is an engineering project. Built using Jekyll and Git
 * **Focus**: Technical documentation, personal branding, SEO, web deployment
 * **Status**: Active
 
-[Read the portfolio dev log →](./portfolio-dev.html)
+[Read Jordan Schilling's portfolio dev log →](./portfolio-dev.html)
 
 ---
 
 ## AI Experiments
+**Built by Jordan Schilling**
 
-I'm actively exploring AI-assisted development, LLM integration, and prompt engineering. These experiments inform how I approach modern software engineering tooling and workflows.
+Jordan Schilling is actively exploring AI-assisted development, LLM integration, and prompt engineering. These experiments inform how Jordan Schilling approaches modern software engineering tooling and workflows.
 
 * **Technologies**: LLMs, Prompt engineering, AI-assisted coding tools
 * **Focus**: AI integration, experimental software, developer workflow optimization
@@ -79,7 +80,7 @@ I'm actively exploring AI-assisted development, LLM integration, and prompt engi
 
 ## Automation Frameworks Overview
 
-My automation work follows consistent engineering principles:
+Jordan Schilling's automation work follows consistent engineering principles:
 
 | Framework | Language | Pattern | Integration |
 |---|---|---|---|
@@ -89,4 +90,4 @@ My automation work follows consistent engineering principles:
 
 ---
 
-[Back to homepage →](./) | [Learn more about me →](./about-jordan-schilling) | [Read articles →](./jordan-schilling-writing)
+[Back to Jordan Schilling's homepage →](./) | [Learn more about Jordan Schilling →](./about-jordan-schilling) | [Read articles by Jordan Schilling →](./jordan-schilling-writing)

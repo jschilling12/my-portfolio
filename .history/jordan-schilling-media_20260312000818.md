@@ -13,13 +13,12 @@ This page collects public mentions, references, and discussions. As I continue t
 
 ## Public Projects
 
-My projects are documented publicly through GitHub repositories and development logs:
+My projects are live and publicly accessible:
 
-* **Python & Playwright Automation Framework** — Source and documentation available on GitHub. [View the Python-Playwright dev log →](./python-playwright.html)
-
-* **FocusBuddy CLI** — Documented through development logs and public repositories. [View the FocusBuddy dev log →](./focus-buddy.html)
-
-* **jordanschilling.me** — This portfolio site is itself a public project, hosted on GitHub Pages. [View the portfolio dev log →](./portfolio-dev.html)
+* **GameDayTLDR** — [gamedaytldr.live](https://gamedaytldr.live)
+* **Notetastic** — [noteastic.click](https://noteastic.click)
+* **JustABill** — [justabill.me](https://justabill.me)
+* **CodeNexus** — Coming soon to the App Store
 
 ---
 
@@ -33,6 +32,7 @@ Repositories include automation frameworks, CLI tools, and website source code.
 
 ---
 
+<!--
 ## External References
 
 This section will be updated as my work receives external mentions, references, or coverage. Areas where my work may be referenced include:
@@ -48,13 +48,13 @@ This section will be updated as my work receives external mentions, references, 
 I'm building toward sharing engineering knowledge through talks and presentations on topics including:
 
 * Automation engineering and framework design
-* Civic technology and public interest software
 * DevOps practices for individual developers
 * CLI tool development and developer productivity
 
 *This section will be updated as I deliver public talks and presentations.*
 
 ---
+-->
 
 ## Contact
 
