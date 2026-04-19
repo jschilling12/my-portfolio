@@ -30,6 +30,28 @@ A production-quality end-to-end test automation framework built using Python, Pl
 
 [Read the Python-Playwright dev log →](./python-playwright.html)
 
+### Multi-Language Code Evaluation Pipeline
+
+A validator reliability initiative focused on stable multi-language compile/run evaluation, artifact consistency, and release-safe language availability.
+
+* **Technologies**: JSON artifacts, Compile/Run adapters, Batch polling, Validation guardrails
+* **Focus**: Reliability engineering, validator architecture, CI operational stability
+* **Status**: Complete
+
+[Read the Multi-Language Code Evaluation Pipeline dev log ->](./multi-language-code-evaluation-pipeline.html)
+
+### Game Backend Platform (DevOps + Reliability + QA Integration)
+
+Built at the intersection of my gaming background and my DevOps pivot, this project focuses on a practical backend platform model where reliability and QA signals are part of the core system design.
+
+What this looks like (practical):
+
+Your "core app platform" becomes:
+
+* **Services**: Matchmaking API, Session service, Telemetry service, Worker (process game events)
+* **Data**: player sessions, match results, latency / disconnect events
+* **Status**: In progress
+
 ### FocusBuddy CLI
 
 A terminal-based tool designed to help developers track deep-work sessions and application usage directly from the command line or an optional GUI.
@@ -49,32 +71,6 @@ This portfolio site itself is an engineering project. Built using Jekyll and Git
 * **Status**: Complete
 
 [Read the portfolio dev log →](./portfolio-dev.html)
-
-### Gaming / PC Quality Playability Harness
-
-A system-level quality engineering case study and tooling harness demonstrating reliability diagnostics, environment awareness, and reproducible execution. Designed to align with QA, SRE, and DevOps thinking.
-
-* **Technologies**: Python, System diagnostics, Environment profiling
-* **Focus**: Reliability engineering, system-level quality assurance, reproducibility
-* **Status**: In progress
-
-### TypeScript & Playwright Automation Framework
-
-A production-quality automation framework using TypeScript and Playwright for testing NotetasticOS, a prompt-coded application. Built to test basic functionality and validate product use.
-
-* **Technologies**: TypeScript, Playwright, Node.js
-* **Focus**: Cross-language SDET capability, product quality assurance
-* **Status**: In progress
-
-### Multi-Language Code Evaluation Pipeline
-
-A validator reliability initiative focused on stable multi-language compile/run evaluation, artifact consistency, and release-safe language availability.
-
-* **Technologies**: JSON artifacts, Compile/Run adapters, Batch polling, Validation guardrails
-* **Focus**: Reliability engineering, validator architecture, CI operational stability
-* **Status**: In progress
-
-[Read the Multi-Language Code Evaluation Pipeline dev log ->](./multi-language-code-evaluation-pipeline.html)
 
 ---
 
