@@ -66,6 +66,16 @@ A production-quality automation framework using TypeScript and Playwright for te
 * **Focus**: Cross-language SDET capability, product quality assurance
 * **Status**: In progress
 
+### Multi-Language Code Evaluation Pipeline
+
+A validator reliability initiative focused on stable multi-language compile/run evaluation, artifact consistency, and release-safe language availability.
+
+* **Technologies**: JSON artifacts, Compile/Run adapters, Batch polling, Validation guardrails
+* **Focus**: Reliability engineering, validator architecture, CI operational stability
+* **Status**: In progress
+
+[Read the Multi-Language Code Evaluation Pipeline dev log ->](./multi-language-code-evaluation-pipeline.html)
+
 ---
 
 ## Technical Interests
