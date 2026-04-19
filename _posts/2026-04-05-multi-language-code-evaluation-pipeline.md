@@ -14,6 +14,52 @@ tags: [validator, artifacts, operations, ci, stability]
 
 Today we hit a clean milestone: **316 of 316**. More important than the number is the operating model behind it. The pipeline is now stable because each layer has a clear contract and artifacts are treated as the canonical record.
 
+## UML System Design
+
+```mermaid
+flowchart LR
+	D[Developer / CI] -->|trigger run| VR[Validator Runner (CLI/Job)]
+
+	subgraph VCP[Validation Control Plane]
+		VR
+		STG[Starter Template Gate]
+		ESF[Eligibility + Scope Filter]
+		PTCG[Problem/Test Catalog Gateway]
+		GC[Guardrail Comparator]
+		CR[Contract Registry]
+		ML[Metrics + Logs]
+		AW[Artifact Writer]
+	end
+
+	subgraph EP[Execution Plane]
+		EG[Execution Gateway]
+		BCP[Batch Client + Poller]
+		CRPA[Compile/Run Provider Adapter]
+		ECRP[External Compile/Run Provider (Redacted)]
+	end
+
+	VR -->|preflight starter checks| STG
+	VR -->|apply scope| ESF
+	VR -->|load problems/tests| PTCG
+	VR -->|evaluate outputs| GC
+	VR -->|summary + metadata| AW
+	VR --> ML
+	VR -->|execute candidate code| EG
+
+	GC -->|resolve rules| CR
+	GC -->|pass/fail + diagnostics| AW
+	GC --> ML
+
+	EG <--> |submit + poll| BCP
+	BCP <--> |normalize provider IO| CRPA
+	CRPA -->|compile/run| ECRP
+	ECRP -->|status/stdout/stderr| CRPA
+
+	EG --> ML
+
+	AW -->|persist reports| VA[(Validation Artifacts (JSON))]
+```
+
 ## What Stable Looks Like
 
 The architecture now behaves predictably across both control and execution planes:
