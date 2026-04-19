@@ -43,34 +43,11 @@ The system is stable and already delivering real value in day-to-day use.
 
 Planned improvements before considering the project “complete”:
 
-* **AI-generated focus reports**
-
-  * Use N8N automation to analyze CSV data
-  * Summarize where focus time is being spent
-  * Generate daily or weekly insight reports
-
-* **Chrome Extension Integration**
-
-  * Track individual browser tabs
-  * Improve granularity for web-based work
-  * Attribute focus time more accurately
-
-* **Mouse Inactivity Timeout**
-
-  * Detect lack of mouse movement
-  * Automatically pause task timers during inactivity
-  * Reduce false positives in focus tracking
-
-* **Window Blocking During Pomodoro Sessions**
-
-  * Prevent distractions during focus intervals
-  * Enforce Pomodoro discipline at the OS level
-
-* **Improved Task Naming Conventions**
-
-  * Normalize application and task labels
-  * Improve clarity in reports and CSV exports
-  * Reduce noise in long-term analytics
+* **Automated focus reports** via n8n workflows and CSV summaries
+* **Chrome extension integration** for tab-level tracking
+* **Mouse inactivity timeout** to auto-pause during idle time
+* **Window blocking during Pomodoro sessions** to reduce distractions
+* **Improved task naming conventions** for cleaner long-term reporting
 
 ## Project Status
 
