@@ -10,7 +10,7 @@ permalink: /jordan-schilling-writing
 I write op-ed style pieces speculating on the future of technology. Read my articles on Medium and dev.to:
 
 **[medium.com/@jordans-chilling](https://medium.com/@tech-oped)**
-**[dev.to/jschilling12](https://dev.to/jschilling12/)
+**[dev.to/jschilling12](https://dev.to/jschilling12/)**
 
 ---
 
