@@ -20,6 +20,16 @@ I'm an engineer who believes in learning by building. From CLI productivity tool
 
 I build tools that solve real problems and document every step of the engineering process.
 
+### Game Services Reliability Platform
+
+A production-style distributed backend simulation for game services, focused on API design, queueing, container orchestration, health checks, observability, and DevSecOps controls. The project uses a matchmaking API, worker process, PostgreSQL, Redis, NGINX, Docker Compose, Prometheus/Grafana, and security scanning to practice operating a backend system end to end.
+
+* **Technologies**: Python, FastAPI, Docker Compose, Redis, PostgreSQL, NGINX, Prometheus, Grafana, OpenTelemetry, GitHub Actions
+* **Focus**: Backend systems, DevOps/DevSecOps, reliability engineering, observability
+* **Status**: In progress
+
+[Read the Game Services Reliability Platform dev log ->](./game-services-reliability-platform.html)
+
 ### Python & Playwright Automation Framework
 
 A production-quality end-to-end test automation framework built using Python, Playwright, and the Page Object Model (POM) pattern. I use this framework on a personal business website, running automated smoke tests for every pull request to validate the customer experience.

@@ -67,6 +67,7 @@ I maintain an active portfolio of projects that reflect a commitment to learning
 
 Key projects include:
 
+* **Game Services Reliability Platform** - A production-style distributed backend simulation focused on API design, queues, Docker orchestration, observability, DevSecOps, and reliability engineering.
 * **Python & Playwright Automation Framework** — A production-quality test automation framework using OOP and the Page Object Model. I use this framework to smoketest a personal business website on every PR.
 * **Gaming / PC Quality Playability Harness** — A system-level quality engineering case study demonstrating reliability diagnostics and reproducible execution.
 * **TypeScript & Playwright Framework** — An automation framework for testing NotetasticOS, demonstrating cross-language testing capabilities.
