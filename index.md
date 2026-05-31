@@ -50,18 +50,6 @@ A validator reliability initiative focused on stable multi-language compile/run 
 
 [Read the Multi-Language Code Evaluation Pipeline dev log ->](./multi-language-code-evaluation-pipeline.html)
 
-### Game Backend Platform (DevOps + Reliability + QA Integration)
-
-Built at the intersection of my gaming background and my DevOps pivot, this project focuses on a practical backend platform model where reliability and QA signals are part of the core system design.
-
-What this looks like (practical):
-
-Your "core app platform" becomes:
-
-* **Services**: Matchmaking API, Session service, Telemetry service, Worker (process game events)
-* **Data**: player sessions, match results, latency / disconnect events
-* **Status**: In progress
-
 ### FocusBuddy CLI
 
 A terminal-based tool designed to help developers track deep-work sessions and application usage directly from the command line or an optional GUI.
