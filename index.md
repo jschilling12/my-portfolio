@@ -26,7 +26,7 @@ A production-style distributed backend simulation for game services, focused on 
 
 * **Technologies**: Python, FastAPI, Docker Compose, Redis, PostgreSQL, NGINX, Prometheus, Grafana, OpenTelemetry, GitHub Actions
 * **Focus**: Backend systems, DevOps/DevSecOps, reliability engineering, observability
-* **Status**: In progress
+* **Status**: Complete
 
 [Read the Game Services Reliability Platform dev log ->](./game-services-reliability-platform.html)
 
